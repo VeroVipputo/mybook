@@ -4,7 +4,7 @@ import NavBar from './components/NavBar';
 import Home from './components/pages/Home';
 import TopTen from './components/pages/TopTen';
 import Colecciones from './components/pages/Colecciones';
-import second from ''
+
 
 
 function App() {
