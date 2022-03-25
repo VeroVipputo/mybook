@@ -7,6 +7,7 @@ import Colecciones from './components/pages/Colecciones';
 import CartWidget from './components/CartWidget';
 
 
+
 function App() {
   return (
     <div className='App'>
