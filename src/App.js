@@ -5,6 +5,7 @@ import Home from './components/pages/Home';
 import TopTen from './components/pages/TopTen';
 import Colecciones from './components/pages/Colecciones';
 import CartWidget from './components/CartWidget';
+import ItemListContainer from './components/ItemListContainer';
 
 
 
@@ -13,7 +14,7 @@ function App() {
     <div className='App'>
       <Router>
         <NavBar/>
-
+        <ItemListContainer/>
       </Router>
     </div>
   );
