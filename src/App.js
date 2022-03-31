@@ -6,7 +6,7 @@ import TopTen from './components/pages/TopTen';
 import Colecciones from './components/pages/Colecciones';
 import CartWidget from './components/CartWidget';
 import ItemListContainer from './components/ItemListContainer';
-
+import FunctionCounter from './components/FunctionCounter/FunctionCounter';
 
 
 function App() {
@@ -16,6 +16,7 @@ function App() {
         <NavBar/>
         <ItemListContainer/>
       </Router>
+      <FunctionCounter/>
     </div>
   );
 }
