@@ -7,16 +7,17 @@ import Colecciones from './components/pages/Colecciones';
 import CartWidget from './components/CartWidget';
 import ItemListContainer from './components/ItemListContainer';
 import FunctionCounter from './components/FunctionCounter/FunctionCounter';
-
+import Books from './components/Item';
 
 function App() {
   return (
     <div className='App'>
       <Router>
         <NavBar/>
-        <ItemListContainer/>
+        
       </Router>
       <FunctionCounter/>
+      <ItemListContainer/>
     </div>
   );
 }

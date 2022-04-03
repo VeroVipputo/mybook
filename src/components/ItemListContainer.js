@@ -1,8 +1,29 @@
-import React from 'react';
+import React, { useState} from 'react';
 
-function Greeting (props) {
+export const Greeting = () => {
+
+     const [books, setBooks] = useState(['El Principito', 'Dracula','El Alquimista', 'Platero y yo', 'La isla del Tesoro']);
+     const handleAdd = () => {
+         setBooks([...books, 'El milagro de Js']);
+     }
     return(
-        <h1>Hola Mundo</h1>
+        <>
+
+        <h1>Catalogo</h1>
+        <hr />
+        <button onClick={ handleAdd }>Agregar</button>
+        <ol>
+            {
+                books.map(book=>{
+                    return <li key={ book }> { book}</li>
+                })
+
+            }
+
+        </ol>
+
+
+        </>
     );
 }
 

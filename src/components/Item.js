@@ -1,16 +1,22 @@
-import React from "react";
 
 
-const Books = (libro) => {
+import React from 'react'
+import PropTypes from 'prop-types'
 
-    return ( 
-            <>
-                <h3> { libro }</h3>
-                <p>Breve descripcion</p>
-                <h4>Precio</h4>
-            
-            </>
-     );
+const CounterApp = value => {
+  return (
+    <>
+        <h1>CounterApp</h1>
+        <h2>{ value }</h2>
+
+        
+        
+    </>
+  )
 }
- 
-export default Books;
+
+CounterApp.propTypes = {
+    value: PropTypes.number
+}
+
+export default CounterApp
