@@ -1,38 +1,52 @@
-
+import React from 'react'
 import { useState, useEffect} from 'react'
+import ItemList from './ItemList';
 
-export const Greeting = () => {
 
 
+
+    const Items =[{
+            id: 1,
+            title: "Martin Fierro",
+            price: 2500,
+            pictureUrl: ""},
+
+            {id: 2,
+            title: "Segundo Sombra",
+            price: 1800,
+            pictureUrl: ""},
+
+           {id: 3,
+            title: "El hombre mediocre",
+            price: 1800,
+            pictureUrl: ""}
+
+    ];
+
+    const ItemListContainer = ({greeting}) => {
      const [products, setProducts] = useState([]);
    
     
          useEffect(() => {
-            fetch('https://api.mercadolibre.com/sites/MLA/search?q=libros')
-            .then(response => {
-                return response.json()
-            }).then( res => {
-                console.log(res.results)
-                setProducts(res.results)
+            let getItems = new Promise((resolve , reject) =>{
+                setTimeout(() => {
+                    Items && Items.length ? resolve (Items) : reject ("error 404")
+                }, 2000);
             })
-         
-         },[]
-         
-         )
+            
+            getItems.then((resolve) => {setProducts (resolve)})
+
+         },[])
 
      
     return(
         <>
 
-       
-       
         <ol>
-        <h1>Catalogo</h1>
+        <h1>{greeting}</h1>
         <hr />
-            <ul>
-                {products.map(product => <img  key={product.id} src={product.thumbnail} ></img>   )}
-               
-            </ul>
+                <ItemList  Items={products} />
+
 
         
         </ol>
@@ -40,6 +54,15 @@ export const Greeting = () => {
 
         </>
     );
-        }
+    }
+        
 
-export default Greeting;
+export default ItemListContainer
+/*
+fetch('https://api.mercadolibre.com/sites/MLA/search?q=libros')
+            .then(response => {
+                return response.json()
+            }).then( res => {
+                console.log(res.results)
+                setProducts(res.results)
+            })*/

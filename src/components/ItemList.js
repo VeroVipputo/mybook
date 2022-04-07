@@ -1,15 +1,14 @@
 
 import React from 'react'
-import Item from './Item'
-
-const ItemList = ({item}) => {
+import Item from './Item/Item'
+const ItemList = ({items}) => {
 
     return(
 
         <div>
             <h1>Productos</h1>
             <ul>
-                {item.maps((item => {
+                {items.map((item => {
                     return <item key={item.id} item={item} />
                 }))}
 
@@ -18,12 +17,7 @@ const ItemList = ({item}) => {
 
 
         </div>
-
-
     )
-
-
-
 
 }
 export default ItemList

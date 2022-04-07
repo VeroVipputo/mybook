@@ -17,7 +17,7 @@ function App() {
         
       </Router>
       <FunctionCounter/>
-      <ItemListContainer/>
+      <ItemListContainer greeting = "My Book, always here!!"/>
       
     </div>
   );

@@ -1,7 +1,8 @@
 
 import React from 'react'
-import { Card } from 'react-boostrap'
-import FunctionCounter from './FunctionCounter/FunctionCounter'
+import Card from 'react-bootstrap/Card'
+import FunctionCounter from '../FunctionCounter/FunctionCounter'
+import Button from 'react-bootstrap/Button'
 
 
 const Item = ({item}) => {
@@ -9,21 +10,23 @@ const Item = ({item}) => {
 
 <div>
 <Card style={{ width: '18rem' }}>
-  <Card.Img variant="top" src="holder.js/100px180" />
+  <Card.Img variant="top" src={item.pictureUrl} />
   <Card.Body>
     <Card.Title>{ item.title}</Card.Title>
     <Card.Text>
+      <p>
       ${item.price}
+      </p>
     </Card.Text>
     <Button variant="primary">Detalle</Button>
-    <FunctionCounter/>
+    <FunctionCounter stock={5} initial={0}/>
   </Card.Body>
 </Card>
 </div>
 
 )
 }
-export default Item;
+export default Item
 
 
 
