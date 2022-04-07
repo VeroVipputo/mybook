@@ -9,7 +9,7 @@ import ItemList from './ItemList';
             id: 1,
             title: "Martin Fierro",
             price: 2500,
-            pictureUrl: ""},
+            pictureUrl: "https://az.com.ar//public/assets//125/gc_1444581594tramaabierta-martinfierrocopy.jpg"},
 
             {id: 2,
             title: "Segundo Sombra",
