@@ -13,14 +13,14 @@ import ItemList from './ItemList';
             pictureUrl: "https://az.com.ar//public/assets//125/gc_1444581594tramaabierta-martinfierrocopy.jpg"},
 
             {id: 2,
-            title: "Segundo Sombra",
+            title: "Ulises, vuelve a casa",
             price: 1800,
-            pictureUrl: ""},
+            pictureUrl: "http://az.com.ar//public/assets//468/gt_1460137586cover-dioses-ulises.jpg"},
 
            {id: 3,
-            title: "El hombre mediocre",
+            title: "Hercules",
             price: 1800,
-            pictureUrl: ""}
+            pictureUrl: "http://az.com.ar//public/assets//208/gt_1460125546cover-dioses-hercules.jpg"}
 
     ];
 

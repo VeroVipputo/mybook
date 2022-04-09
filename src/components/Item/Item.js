@@ -3,11 +3,12 @@ import React from 'react'
 import { Card } from 'react-bootstrap'
 import FunctionCounter from '../FunctionCounter/FunctionCounter'
 import Button from 'react-bootstrap/Button'
-
+import {Link} from 'react-router-dom';
 
 const Item = ({ item }) => (
 
   <div>
+    
     <Card style={{ width: '18rem' }} key ={item.id}>
       <Card.Img variant="top" src= {item.pictureUrl}/>
       <Card.Body>
