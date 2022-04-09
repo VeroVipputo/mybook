@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState, useEffect} from 'react'
+import Item from './Item/Item';
 import ItemList from './ItemList';
 
 
@@ -45,10 +46,10 @@ import ItemList from './ItemList';
         <h1>{greeting}</h1>
        
                 <ItemList  items={products} />
-
+                
         </>
-    );
-    }
+    );}
+    
         
 
 export default ItemListContainer
