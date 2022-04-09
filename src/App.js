@@ -14,9 +14,9 @@ function App() {
     <div className='App'>
       <Router>
         <NavBar/>
-        
+        <FunctionCounter/>
       </Router>
-      <FunctionCounter/>
+      
       <ItemListContainer greeting = "My Book, always here!!"/>
       
     </div>

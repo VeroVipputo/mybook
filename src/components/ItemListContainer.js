@@ -5,7 +5,7 @@ import ItemList from './ItemList';
 
 
 
-    const Items =[{
+    const items =[{
             id: 1,
             title: "Martin Fierro",
             price: 2500,
@@ -30,7 +30,7 @@ import ItemList from './ItemList';
          useEffect(() => {
             let getItems = new Promise((resolve , reject) =>{
                 setTimeout(() => {
-                    Items && Items.length ? resolve (Items) : reject ("error 404")
+                    items && items.length ? resolve (items) : reject ("error 404")
                 }, 2000);
             })
             
@@ -42,15 +42,9 @@ import ItemList from './ItemList';
     return(
         <>
 
-        <ol>
         <h1>{greeting}</h1>
-        <hr />
-                <ItemList  Items={products} />
-
-
-        
-        </ol>
-
+       
+                <ItemList  items={products} />
 
         </>
     );
