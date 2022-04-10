@@ -4,10 +4,11 @@ import { Card } from 'react-bootstrap'
 import FunctionCounter from '../FunctionCounter/FunctionCounter'
 import Button from 'react-bootstrap/Button'
 import {Link} from 'react-router-dom';
+import './Item.css'
 
 const Item = ({ item }) => (
 
-  <div>
+  <div className='item'>
     
     <Card style={{ width: '18rem' }} key ={item.id}>
       <Card.Img variant="top" src= {item.pictureUrl}/>
