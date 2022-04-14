@@ -7,7 +7,7 @@ import Colecciones from './components/pages/Colecciones';
 import CartWidget from './components/CartWidget';
 import ItemListContainer from './components/ItemListContainer';
 import FunctionCounter from './components/FunctionCounter/FunctionCounter';
-
+import Cart from './components/Cart/Cart';
 
 function App() {
   return (
@@ -18,6 +18,19 @@ function App() {
       </Router>
       
       <ItemListContainer greeting = "My Book, always here!!"/>
+      <Route path='/cart' element={<Cart />} />
+
+
+
+
+
+      <CartContextProvider>
+          <BrowserRouter>
+          <Route>
+          <Route path='/cart' element={<Cart />} />
+            </Route>
+          </BrowserRouter>
+        </CartContextProvider>
       
     </div>
   );
